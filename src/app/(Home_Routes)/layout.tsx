@@ -1,3 +1,4 @@
+import Footer from "@/components/cards/Footer";
 import Header from "@/components/cards/Header";
 import Navbar from "@/components/cards/Navbar";
 import React from "react";
@@ -8,6 +9,7 @@ export default function layout({ children }: { children: React.ReactNode }) {
       <Header />
       <Navbar />
       {children}
+      <Footer />
     </div>
   );
 }
