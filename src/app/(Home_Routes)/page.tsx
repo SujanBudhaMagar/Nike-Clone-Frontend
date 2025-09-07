@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -13,11 +13,11 @@ import { HeroData } from "@/constants";
 const Home = () => {
   return (
     <div className="h-[660px] w-full">
-      <div className="absolute bottom-4 space-x-3 right-4 text-xl text-white z-50">
-        <button className="prev bg-black/30 rounded-full p-3">
+      <div className="absolute bottom-6 space-x-3 right-4 text-xl text-white z-50">
+        <button className="prev bg-black/30 rounded-full p-2">
           <FaChevronLeft />
         </button>
-        <button className="nex bg-black/30 rounded-full p-3">
+        <button className="nex bg-black/30 rounded-full p-2">
           <FaChevronRight />
         </button>
       </div>
@@ -45,7 +45,7 @@ const Home = () => {
                 <motion.div
                   initial={{ opacity: 0, x: 0 }}
                   whileInView={{ opacity: 1, x: -20 }}
-                  transition={{ delay: 0.5 }}
+                  transition={{ delay: 0.3 }}
                 >
                   <h1 className="text-3xl md:text-6xl font-bold">
                     {item.title}
@@ -53,8 +53,8 @@ const Home = () => {
                   <p className="mt-4 md:mt-6 text-lg md:text-2xl">
                     {item.description}
                   </p>
-                  <div className="mt-6 flex gap-4 flex-wrap justify-center">
-                    <button className="bg-white text-black px-6 py-2 rounded font-semibold hover:scale-105 transition">
+                  <div className="mt-6 flex gap-4 flex-wrap justify-center cur">
+                    <button className="bg-white text-black px-6 py-2 rounded font-semibold hover:bg-gray-50 transition duration-200">
                       {item.btn1}
                     </button>
                     {item.btn2 && (
