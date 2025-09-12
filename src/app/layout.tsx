@@ -12,7 +12,7 @@ const raleway = Raleway({
 export const metadata: Metadata = {
   title: "Nike",
   description: "",
-  authors: [{ name: "Sujan BUdha Magar" }],
+  authors: [{ name: "Sujan Budha Magar" }],
   creator: "",
   openGraph: {
     title: "NiKe-Clone",

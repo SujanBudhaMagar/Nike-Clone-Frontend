@@ -15,3 +15,14 @@ export interface HeroProps {
   btn2?: string;
   img: string;
 }
+
+export interface ShoppingProps {
+  name: string;
+  img: string;
+  title?: string;
+}
+
+export interface InputFieldProps {
+  name: string;
+  type: string;
+}

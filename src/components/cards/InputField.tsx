@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { GrCycle } from "react-icons/gr";
+import { InputFieldProps } from "@/types";
 
-const InputField = ({ name, type }: { name: string; type: string }) => {
+const InputField = ({ name, type }: InputFieldProps) => {
   const [value, setValue] = useState("");
   const [focus, setFocus] = useState(false);
   return (

@@ -1,4 +1,4 @@
-import { HeaderProps, HeroProps, NavProps } from "@/types";
+import { HeaderProps, HeroProps, NavProps, ShoppingProps } from "@/types";
 
 export const HeaderData: HeaderProps[] = [
   { name: "Find a store", link: "/find" },
@@ -111,4 +111,22 @@ export const ModalData = [
     name: "Chile",
     language: "Colombia",
   },
+];
+
+export const ShoppingSport: ShoppingProps[] = [
+  { name: "Basketball", img: "/img/sport1.png" },
+  { name: "Soccer", img: "/img/sport2.png" },
+  { name: "Running", img: "/img/sport3.png" },
+  { name: "Football", img: "/img/sport8.png" },
+  { name: "Tennis", img: "/img/sport7.png" },
+  { name: "Baseball", img: "/img/sport6.png" },
+  { name: "Golf", img: "/img/sport4.png" },
+  { name: "Skateboarding", img: "/img/sport5.png" },
+];
+
+export const ShoppingCategory: ShoppingProps[] = [
+  { name: "Footwear", img: "/img/sport1.png" },
+  { name: "Apparel", img: "/img/sport2.png" },
+  { name: "Accessories & Equipment", img: "/img/sport3.png" },
+  { name: "Skateboarding", img: "/img/sport5.png" },
 ];
