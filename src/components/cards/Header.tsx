@@ -6,7 +6,7 @@ import { SiJordan } from "react-icons/si";
 
 const Header = () => {
   return (
-    <div className="bg-gray-100 globalContainer">
+    <div className="bg-gray-100 globalContainer hidden md:block">
       <div className="flex items-center justify-between">
         <div className="flex gap-2">
           <SiJordan size={20} />
